@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <script src="../static/js/appHome.js"></script>
+    <title>Document</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+        body {
+            
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+        }
+        .container > header h1,
+        .container > header h2 {
+            color: #fff;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="main">
+            <div style="text-align:center">
+                <h1>Registro de Actividades</h1>
+            </div>
+                  <form class="form-3" action="/register_user" method="post">
+                    <p class="clearfix">
+                        <label for="fechaInicio">Fecha de Inicio:</label>
+                        <input type="date" id="fechaInicio" name="fechaInicio" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="horaInicio">Hora de Inicio:</label>
+                        <input type="time" id="horaInicio" name="horaInicio" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="fechaFinal">Fecha Final:</label>
+                        <input type="date" id="fechaFinal" name="fechaFinal" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="horaFinal">Hora Final:</label>
+                        <input type="time" id="horaFinal" name="horaFinal" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="descripcion">Descripción de la Actividad:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                    </p>
+                    <p class="clearfix">
+                        <label for="proyecto">Proyecto:</label>
+                        <select id="proyecto" name="proyecto">
+                            <option value="proyecto1">Proyecto 1</option>
+                            <option value="proyecto2">Proyecto 2</option>
+                        </select>
+                    </p>
+                    <p class="clearfix">
+                        <label for="horasTrabajadas">Horas Trabajadas:</label>
+                        <input type="number" id="horasTrabajadas" name="horasTrabajadas" required>
+                    </p>
+                        
+                    <p class="clearfix">
+				        <input type="submit" name="submit" value="Registrar">
+				    </p> 
+                    
+                </form>
+                <div>
+                    <form class="form-3">
+                        <p class="clearfix">
+                            <input onclick="home_page();" type="button" name="submit" value="Volver a Inicio">
+                        </p> 
+                    </form>
+                </div>
+
+        </section>
+    </div>
+    
+</body>
+</html>
